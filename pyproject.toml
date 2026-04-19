@@ -1,0 +1,18 @@
+[project]
+name = "youtube-pipeline"
+version = "0.1.0"
+description = "Automated YouTube viral clip pipeline"
+requires-python = ">=3.11"
+dependencies = [
+    "anthropic>=0.40.0",
+    "yt-dlp>=2024.1.0",
+    "moviepy>=1.0.3",
+    "google-api-python-client>=2.100.0",
+    "google-auth-oauthlib>=1.1.0",
+    "apscheduler>=3.10.0",
+    "python-dotenv>=1.0.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
