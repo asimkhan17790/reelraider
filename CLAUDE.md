@@ -42,6 +42,6 @@ discovery → copyright_check → downloader → clipper → caption_gen → upl
 | `scheduler.py` | APScheduler cron at 09:00 daily wrapping `run_pipeline()` |
 | `config.py` | Single source of truth for all env vars; fails fast on missing required keys |
 
-All pipeline stage functions take/return plain `dict` with keys: `video_id`, `title`, `description`, `channel`, `url`.
+All pipeline stage functions take/return plain `dict` with keys: `video_id`,   `title`, `description`, `channel`, `url`.
 
-`MAX_VIDEOS_PER_RUN` caps processing; discovery fetches `3×` that count to allow copyright filtering to trim it down...
+`MAX_VIDEOS_PER_RUN` caps processing; discovery fetches `3×` that count to allow copyright filtering to trim it down......
