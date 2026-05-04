@@ -34,8 +34,8 @@ def run_pipeline():
     print("[pipeline] done.")
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+def cli():
+    parser = argparse.ArgumentParser(description="ReelRaider YouTube clip pipeline")
     parser.add_argument("--once", action="store_true", help="Run pipeline once without scheduler")
     args = parser.parse_args()
 
@@ -44,3 +44,7 @@ if __name__ == "__main__":
     else:
         from scheduler import start_scheduler
         start_scheduler()
+
+
+if __name__ == "__main__":
+    cli()
