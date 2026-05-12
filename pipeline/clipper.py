@@ -1,6 +1,7 @@
 import os
+import ffmpeg
 import numpy as np
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 import config
 
 
@@ -47,8 +48,13 @@ def extract_clip(video_path: str, video_id: str) -> str | None:
                 start = _find_best_window(clip, duration)
                 start = min(start, clip.duration - duration)
 
-            subclip = clip.subclip(start, start + duration)
-            subclip.write_videofile(out_path, codec="libx264", audio_codec="aac", logger=None)
+        # Use typed-ffmpeg directly for a blazing fast stream copy (no re-encoding)
+        (
+            ffmpeg
+            .input(filename=video_path, ss=start, t=duration)
+            .output(filename=out_path, c="copy")
+            .run(overwrite_output=True, quiet=True)
+        )
         return out_path
     except Exception as e:
         print(f"[clipper] failed {video_id}: {e}")
