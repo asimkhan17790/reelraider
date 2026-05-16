@@ -1,10 +1,13 @@
 import argparse
 from pipeline.discovery import find_viral_videos_by_keyword
 from pipeline.copyright_check import filter_safe_videos
+from pipeline.scorer import score_videos
 from pipeline.downloader import download_video
 from pipeline.clipper import extract_clip
 from pipeline.caption_gen import generate_caption
 from pipeline.uploader import upload_clip
+
+DISCOVERY_KEYWORD = "Technology and Artificial Intelligence"
 
 
 def run_pipeline():
@@ -15,22 +18,27 @@ def run_pipeline():
     videos = filter_safe_videos(videos)
     print(f"[pipeline] {len(videos)} pass copyright check")
 
-    for video in videos:
-        print(f"[pipeline] processing: {video['title']}")
+    if not videos:
+        print("[pipeline] no safe videos found, exiting")
+        return
 
-        video_path = download_video(video)
-        if not video_path:
-            continue
+    video = score_videos(videos, DISCOVERY_KEYWORD)
+    print(f"[pipeline] selected: {video['title']}")
 
-        clip_path = extract_clip(video_path, video["video_id"])
-        if not clip_path:
-            continue
+    video_path = download_video(video)
+    if not video_path:
+        print("[pipeline] download failed, exiting")
+        return
 
-        metadata = generate_caption(video)
-        print(f"[pipeline] caption: {metadata['title']}")
+    clip_path = extract_clip(video_path, video["video_id"])
+    if not clip_path:
+        print("[pipeline] clip extraction failed, exiting")
+        return
 
-        upload_clip(clip_path, metadata)
+    metadata = generate_caption(video)
+    print(f"[pipeline] caption: {metadata['title']}")
 
+    upload_clip(clip_path, metadata)
     print("[pipeline] done.")
 
 
