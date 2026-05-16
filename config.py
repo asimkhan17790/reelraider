@@ -11,6 +11,9 @@ VIDEO_CATEGORY_ID = os.getenv("VIDEO_CATEGORY_ID", "10")
 MAX_VIDEOS_PER_RUN = int(os.getenv("MAX_VIDEOS_PER_RUN", "5"))
 CLIP_DURATION_SECONDS = int(os.getenv("CLIP_DURATION_SECONDS", "55"))
 UPLOAD_PRIVACY = os.getenv("UPLOAD_PRIVACY", "private")
+if UPLOAD_PRIVACY not in {"private", "unlisted", "public"}:
+    raise ValueError(f"Invalid UPLOAD_PRIVACY: {UPLOAD_PRIVACY!r}. Must be one of: private, unlisted, public")
 TEMP_DIR = os.getenv("TEMP_DIR", "./tmp")
-TOKEN_FILE = "token.json"
+DISCOVERY_KEYWORD = os.getenv("DISCOVERY_KEYWORD", "Technology and Artificial Intelligence")
+TOKEN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "token.json")
 YOUTUBE_SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]

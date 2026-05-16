@@ -22,7 +22,11 @@ The system SHALL define `DISCOVERY_KEYWORD = "Technology and Artificial Intellig
 
 ### Requirement: Statistics enrichment via second API call
 
-The system SHALL enrich keyword search results with `view_count` and `like_count` by making a batched `videos().list` call with the IDs returned from `search().list`.
+The system SHALL enrich keyword search results by making a batched `videos().list` call with `part="snippet,statistics,contentDetails"`, returning the following fields per video: `video_id`, `title`, `description`, `channel`, `url`, `published_at`, `tags`, `view_count`, `like_count`, `comment_count`, `definition`, `has_caption`, `transcript`.
+
+#### Scenario: All metadata fields present in returned dicts
+- **WHEN** `find_viral_videos_by_keyword()` completes successfully
+- **THEN** each returned dict includes all 13 fields; numeric counts default to `0` if absent from the API response; string fields default to `""`; list fields default to `[]`; `has_caption` defaults to `False`
 
 #### Scenario: View count attached to each result
 - **WHEN** `find_viral_videos_by_keyword()` completes
