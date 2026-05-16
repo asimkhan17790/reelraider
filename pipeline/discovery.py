@@ -1,5 +1,5 @@
 from googleapiclient.discovery import build
-from youtube_transcript_api import YouTubeTranscriptApi
+from youtube_transcript_api import YouTubeTranscriptApi # type: ignore[union-attr]
 import config
 
 DISCOVERY_KEYWORD = "Technology and Artificial Intelligence"
@@ -7,8 +7,7 @@ DISCOVERY_KEYWORD = "Technology and Artificial Intelligence"
 
 def find_viral_videos_by_keyword(keyword: str = DISCOVERY_KEYWORD) -> list[dict]:
     youtube = build("youtube", "v3", developerKey=config.YOUTUBE_API_KEY)
-
-    search_response = youtube.search().list(
+    search_response = youtube.search().list( # type: ignore[union-attr]
         q=keyword,
         type="video",
         order="viewCount",
@@ -22,15 +21,17 @@ def find_viral_videos_by_keyword(keyword: str = DISCOVERY_KEYWORD) -> list[dict]
     if not video_ids:
         return []
 
-    videos_response = youtube.videos().list(
+    videos_response = youtube.videos().list(  # type: ignore[union-attr]
         id=",".join(video_ids),
-        part="snippet,statistics",
+        part="snippet,statistics,contentDetails",
     ).execute()
 
     videos = []
     for item in videos_response.get("items", []):
         video_id = item["id"]
         stats = item.get("statistics", {})
+        snippet = item["snippet"]
+        content = item.get("contentDetails", {})
 
         try:
             transcript_entries = YouTubeTranscriptApi.get_transcript(video_id)
@@ -40,12 +41,17 @@ def find_viral_videos_by_keyword(keyword: str = DISCOVERY_KEYWORD) -> list[dict]
 
         videos.append({
             "video_id": video_id,
-            "title": item["snippet"]["title"],
-            "description": item["snippet"]["description"],
-            "channel": item["snippet"]["channelTitle"],
+            "title": snippet["title"],
+            "description": snippet.get("description", ""),
+            "channel": snippet["channelTitle"],
             "url": f"https://www.youtube.com/watch?v={video_id}",
+            "published_at": snippet.get("publishedAt", ""),
+            "tags": snippet.get("tags", []),
             "view_count": int(stats.get("viewCount", 0)),
             "like_count": int(stats.get("likeCount", 0)),
+            "comment_count": int(stats.get("commentCount", 0)),
+            "definition": content.get("definition", "sd"),
+            "has_caption": content.get("caption", "false") == "true",
             "transcript": transcript,
         })
 
@@ -75,3 +81,4 @@ def find_viral_videos() -> list[dict]:
         })
 
     return videos
+find_viral_videos_by_keyword()
