@@ -1,6 +1,8 @@
+import logging
 import re
 from datetime import datetime, timezone
 
+logger = logging.getLogger(__name__)
 
 _POWER_WORDS = {
     "shocking", "secret", "exposed", "revealed", "banned", "viral",
@@ -84,7 +86,10 @@ def score_videos(videos: list[dict], keyword: str) -> dict:
     if not videos:
         raise ValueError("No videos to score")
     if len(videos) == 1:
+        logger.info("Only one candidate — skipping scoring: video_id=%s", videos[0]["video_id"])
         return videos[0]
+
+    logger.info("Scoring %d candidate videos for keyword=%r", len(videos), keyword)
 
     velocities = [
         v["view_count"] / _days_since(v.get("published_at", ""))
@@ -105,7 +110,8 @@ def score_videos(videos: list[dict], keyword: str) -> dict:
     norm_comment = _norm(comment_rates)
 
     best_score = -1.0
-    best_video = videos[0]
+    best_idx = 0
+    scores: dict[int, float] = {}
 
     for i, video in enumerate(videos):
         score = (
@@ -118,11 +124,17 @@ def score_videos(videos: list[dict], keyword: str) -> dict:
             + 0.10 * _title_hook_score(video["title"])
             + 0.10 * _quality_score(video)
         )
-        video["_score"] = round(score, 4)
-        print(f"[scorer] {score:.3f} | {video['title'][:60]}")
+        scores[i] = round(score, 4)
+        logger.debug("score=%.3f video_id=%s title=%r", score, video["video_id"], video["title"][:60])
         if score > best_score:
             best_score = score
-            best_video = video
+            best_idx = i
 
-    print(f"[scorer] winner: {best_video['title'][:60]} (score={best_score:.3f})")
+    best_video = videos[best_idx]
+    logger.info(
+        "Scorer winner: video_id=%s score=%.3f title=%r",
+        best_video["video_id"],
+        best_score,
+        best_video["title"][:60],
+    )
     return best_video
