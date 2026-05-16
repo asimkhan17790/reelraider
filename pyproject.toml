@@ -12,6 +12,7 @@ dependencies = [
     "apscheduler>=3.10.0",
     "python-dotenv>=1.0.0",
     "typed-ffmpeg>=4.1",
+    "youtube-transcript-api>=0.6.0",
 ]
 
 [project.scripts]
