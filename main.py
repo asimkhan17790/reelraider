@@ -1,5 +1,5 @@
 import argparse
-from pipeline.discovery import find_viral_videos
+from pipeline.discovery import find_viral_videos_by_keyword
 from pipeline.copyright_check import filter_safe_videos
 from pipeline.downloader import download_video
 from pipeline.clipper import extract_clip
@@ -9,7 +9,7 @@ from pipeline.uploader import upload_clip
 
 def run_pipeline():
     print("[pipeline] finding viral videos...")
-    videos = find_viral_videos()
+    videos = find_viral_videos_by_keyword()
     print(f"[pipeline] found {len(videos)} candidates")
 
     videos = filter_safe_videos(videos)
