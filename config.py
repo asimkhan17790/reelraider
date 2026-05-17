@@ -27,6 +27,6 @@ UPLOAD_PRIVACY = os.getenv("UPLOAD_PRIVACY", "private")
 if UPLOAD_PRIVACY not in {"private", "unlisted", "public"}:
     raise ValueError(f"Invalid UPLOAD_PRIVACY: {UPLOAD_PRIVACY!r}. Must be one of: private, unlisted, public")
 TEMP_DIR = os.getenv("TEMP_DIR", "./tmp")
-DISCOVERY_KEYWORD = os.getenv("DISCOVERY_KEYWORD", "Formula One Most watched Videos")
+DISCOVERY_KEYWORD = os.getenv("DISCOVERY_KEYWORD", "Cricket IPL 2026")
 TOKEN_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "token.json")
 YOUTUBE_SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]

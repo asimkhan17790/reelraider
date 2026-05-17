@@ -88,15 +88,15 @@ def _speech_density_norm(videos: list[dict]) -> list[float]:
     return _norm(counts)
 
 
-def score_videos(videos: list[dict], keyword: str) -> dict:
-    """Score all candidate videos and return the single highest-scoring one."""
+def score_videos(videos: list[dict], keyword: str, n: int = 1) -> list[dict]:
+    """Score all candidate videos and return the top-n highest-scoring ones."""
     if not videos:
         raise ValueError("No videos to score")
     if len(videos) == 1:
         logger.info("Only one candidate — skipping scoring: video_id=%s", videos[0]["video_id"])
-        return videos[0]
+        return videos[:n]
 
-    logger.info("Scoring %d candidate videos for keyword=%r", len(videos), keyword)
+    logger.info("Scoring %d candidate videos for keyword=%r, selecting top %d", len(videos), keyword, n)
 
     velocities = [
         v["view_count"] / _days_since(v.get("published_at", ""))
@@ -117,8 +117,6 @@ def score_videos(videos: list[dict], keyword: str) -> dict:
     norm_comment = _norm(comment_rates)
     speech_norm = _speech_density_norm(videos)
 
-    best_score = -1.0
-    best_idx = 0
     scores: dict[int, float] = {}
 
     for i, video in enumerate(videos):
@@ -138,15 +136,14 @@ def score_videos(videos: list[dict], keyword: str) -> dict:
             "score=%.3f speech_norm=%.3f video_id=%s title=%r",
             score, speech_norm[i], video["video_id"], video["title"][:60],
         )
-        if score > best_score:
-            best_score = score
-            best_idx = i
 
-    best_video = videos[best_idx]
-    logger.info(
-        "Scorer winner: video_id=%s score=%.3f title=%r",
-        best_video["video_id"],
-        best_score,
-        best_video["title"][:60],
-    )
-    return best_video
+    ranked = sorted(scores.keys(), key=lambda i: scores[i], reverse=True)
+    top = [videos[i] for i in ranked[:n]]
+
+    for rank, (idx, video) in enumerate(zip(ranked[:n], top), start=1):
+        logger.info(
+            "Scorer rank %d: video_id=%s score=%.3f title=%r",
+            rank, video["video_id"], scores[idx], video["title"][:60],
+        )
+
+    return top
