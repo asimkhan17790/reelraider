@@ -40,7 +40,7 @@ def run_pipeline():
         logger.error("Download failed for video_id=%s — exiting pipeline", video["video_id"])
         return
 
-    clip_path = extract_clip(video_path, video["video_id"])
+    clip_path = extract_clip(video_path, video["video_id"], metadata=video)
     if not clip_path:
         logger.error(
             "Clip extraction failed for video_id=%s path=%s — exiting pipeline",
@@ -49,15 +49,15 @@ def run_pipeline():
         )
         return
 
-    metadata = generate_caption(video)
-    logger.info(
-        "Caption generated: video_id=%s caption_title=%r",
-        video["video_id"],
-        metadata["title"],
-    )
+    # metadata = generate_caption(video)
+    # logger.info(
+    #     "Caption generated: video_id=%s caption_title=%r",
+    #     video["video_id"],
+    #     metadata["title"],
+    # )
 
-    upload_clip(clip_path, metadata)
-    logger.info("Pipeline complete")
+    # upload_clip(clip_path, metadata)
+    # logger.info("Pipeline complete")
 
 
 def cli():

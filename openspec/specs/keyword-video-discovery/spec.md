@@ -1,61 +1,32 @@
-## Requirements
-
-### Requirement: Keyword-based video search
-
-The system SHALL provide a function `find_viral_videos_by_keyword(keyword: str = DISCOVERY_KEYWORD)` that searches YouTube for videos matching the given keyword, ranked by view count.
-
-#### Scenario: Search returns keyword-matched videos ordered by popularity
-- **WHEN** `find_viral_videos_by_keyword()` is called with a keyword
-- **THEN** the function returns a list of video dicts, each containing `video_id`, `title`, `description`, `channel`, `url`, `view_count`, and `transcript`
-
-#### Scenario: Default keyword is used when none provided
-- **WHEN** `find_viral_videos_by_keyword()` is called with no arguments
-- **THEN** the function uses `DISCOVERY_KEYWORD` (`"Technology and Artificial Intelligence"`) as the search term
+## MODIFIED Requirements
 
 ### Requirement: Hardcoded default keyword constant
+The system SHALL define `DISCOVERY_KEYWORD` in `config.py` (not `pipeline/discovery.py`) as the canonical source, with value controlled by the `DISCOVERY_KEYWORD` environment variable defaulting to `"Technology and Artificial Intelligence"`. `pipeline/discovery.py` SHALL re-export it via `from config import DISCOVERY_KEYWORD` for backward compatibility.
 
-The system SHALL define `DISCOVERY_KEYWORD = "Technology and Artificial Intelligence"` as a module-level constant in `pipeline/discovery.py`.
-
-#### Scenario: Constant is importable and usable as default
+#### Scenario: Constant is importable from pipeline.discovery
 - **WHEN** a caller imports `DISCOVERY_KEYWORD` from `pipeline.discovery`
-- **THEN** it returns the string `"Technology and Artificial Intelligence"`
+- **THEN** it returns the configured value (default: `"Technology and Artificial Intelligence"`)
+
+#### Scenario: Env var overrides default keyword
+- **WHEN** `DISCOVERY_KEYWORD=Finance` is set in the environment
+- **THEN** `config.DISCOVERY_KEYWORD` and `pipeline.discovery.DISCOVERY_KEYWORD` both return `"Finance"`
 
 ### Requirement: Statistics enrichment via second API call
-
-The system SHALL enrich keyword search results by making a batched `videos().list` call with `part="snippet,statistics,contentDetails"`, returning the following fields per video: `video_id`, `title`, `description`, `channel`, `url`, `published_at`, `tags`, `view_count`, `like_count`, `comment_count`, `definition`, `has_caption`, `transcript`.
+The system SHALL enrich keyword search results by making a batched `videos().list` call with `part="snippet,statistics,contentDetails"`. Numeric stat fields (`view_count`, `like_count`, `comment_count`) SHALL be cast using a safe helper that returns `0` on `ValueError` or missing keys rather than raising.
 
 #### Scenario: All metadata fields present in returned dicts
 - **WHEN** `find_viral_videos_by_keyword()` completes successfully
-- **THEN** each returned dict includes all 13 fields; numeric counts default to `0` if absent from the API response; string fields default to `""`; list fields default to `[]`; `has_caption` defaults to `False`
+- **THEN** each returned dict includes all 13 fields; numeric counts default to `0` if absent or non-numeric; string fields default to `""`; list fields default to `[]`; `has_caption` defaults to `False`
 
-#### Scenario: View count attached to each result
-- **WHEN** `find_viral_videos_by_keyword()` completes
-- **THEN** each returned dict includes `view_count` as an integer (or `0` if statistics unavailable)
+#### Scenario: Non-numeric stat field defaults to zero without aborting
+- **WHEN** the YouTube API returns a non-numeric string for `viewCount`
+- **THEN** `view_count` is stored as `0` and the video is still included in results
 
-### Requirement: Creative Commons pre-filter in search
+## ADDED Requirements
 
-The system SHALL pass `videoLicense="creativeCommon"` to `search().list` as a best-effort pre-filter.
+### Requirement: video_id format guard in discovery
+The system SHALL validate each `video_id` returned by the YouTube API matches `[A-Za-z0-9_-]{11}` before appending to results. Invalid IDs SHALL be skipped with a `logger.warning`.
 
-#### Scenario: Search query includes license filter
-- **WHEN** `find_viral_videos_by_keyword()` calls the YouTube search API
-- **THEN** the request includes `videoLicense="creativeCommon"`
-
-### Requirement: Transcript metadata attachment
-
-The system SHALL attempt to fetch a transcript for each discovered video using `youtube-transcript-api` and attach it as a flat string to the `transcript` field.
-
-#### Scenario: Transcript available
-- **WHEN** a video has captions (auto-generated or manual)
-- **THEN** `transcript` field contains the full text as a single joined string
-
-#### Scenario: Transcript unavailable
-- **WHEN** a video has no captions or transcript fetch fails
-- **THEN** `transcript` field is `None` and no exception is raised
-
-### Requirement: Existing discovery function preserved
-
-The system SHALL keep `find_viral_videos()` unchanged with its existing signature and behavior.
-
-#### Scenario: Existing pipeline still works
-- **WHEN** `find_viral_videos()` is called (no arguments)
-- **THEN** it returns the same mostPopular chart results as before this change
+#### Scenario: Video with invalid ID is skipped
+- **WHEN** the YouTube API returns a video with a malformed ID
+- **THEN** that video is omitted from the returned list and a warning is logged
