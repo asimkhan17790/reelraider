@@ -17,17 +17,21 @@ def _safe_int(val, default: int = 0) -> int:
 
 
 def find_viral_videos_by_keyword(keyword: str = DISCOVERY_KEYWORD) -> list[dict]:
-    logger.info("Searching YouTube for keyword=%r maxResults=%d", keyword, config.MAX_VIDEOS_PER_RUN * 3)
+    fetch_count = config.MAX_VIDEOS_PER_RUN * config.DISCOVERY_FETCH_MULTIPLIER
+    logger.info("Searching YouTube for keyword=%r maxResults=%d", keyword, fetch_count)
     youtube = build("youtube", "v3", developerKey=config.YOUTUBE_API_KEY)
-    search_response = youtube.search().list(  # type: ignore[union-attr]
+    search_params: dict = dict(
         q=keyword,
         type="video",
         order="viewCount",
         videoLicense="creativeCommon",
         regionCode=config.REGION_CODE,
-        maxResults=config.MAX_VIDEOS_PER_RUN * 3,
+        maxResults=fetch_count,
         part="id",
-    ).execute()
+    )
+    if config.DISCOVERY_CATEGORY_ID:
+        search_params["videoCategoryId"] = config.DISCOVERY_CATEGORY_ID
+    search_response = youtube.search().list(**search_params).execute()  # type: ignore[union-attr]
 
     video_ids = [item["id"]["videoId"] for item in search_response.get("items", [])]
     if not video_ids:

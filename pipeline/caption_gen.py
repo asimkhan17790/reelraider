@@ -18,6 +18,7 @@ def generate_caption(video: dict) -> dict:
     logger.debug("generate_caption: video_id=%s title=%r", video_id, video.get("title"))
     logger.info("Generating caption for video_id=%s", video_id)
 
+    transcript_hint = (video.get("transcript") or "")[:300]
     prompt = f"""Given this YouTube video metadata, write short-form clip metadata.
 
 <user_content>
@@ -25,6 +26,7 @@ Original title: {video['title']}
 Original description: {video['description'][:500]}
 Original channel: {video['channel']}
 Original URL: {video['url']}
+Transcript excerpt: {transcript_hint}
 </user_content>
 
 Return EXACTLY in this format (no extra text):

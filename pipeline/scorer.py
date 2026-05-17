@@ -81,6 +81,13 @@ def _quality_score(video: dict) -> float:
     return score
 
 
+def _speech_density_norm(videos: list[dict]) -> list[float]:
+    counts = [len((v.get("transcript") or "").split()) for v in videos]
+    if max(counts) == 0:
+        return [0.0] * len(counts)
+    return _norm(counts)
+
+
 def score_videos(videos: list[dict], keyword: str) -> dict:
     """Score all candidate videos and return the single highest-scoring one."""
     if not videos:
@@ -108,6 +115,7 @@ def score_videos(videos: list[dict], keyword: str) -> dict:
     norm_eng = _norm(engagement_rates)
     norm_like = _norm(like_rates)
     norm_comment = _norm(comment_rates)
+    speech_norm = _speech_density_norm(videos)
 
     best_score = -1.0
     best_idx = 0
@@ -120,12 +128,16 @@ def score_videos(videos: list[dict], keyword: str) -> dict:
             + 0.15 * norm_eng[i]
             + 0.10 * norm_like[i]
             + 0.05 * norm_comment[i]
-            + 0.10 * _seo_score(video, keyword)
-            + 0.10 * _title_hook_score(video["title"])
+            + 0.08 * _seo_score(video, keyword)
+            + 0.07 * _title_hook_score(video["title"])
             + 0.10 * _quality_score(video)
+            - 0.15 * speech_norm[i]
         )
         scores[i] = round(score, 4)
-        logger.debug("score=%.3f video_id=%s title=%r", score, video["video_id"], video["title"][:60])
+        logger.debug(
+            "score=%.3f speech_norm=%.3f video_id=%s title=%r",
+            score, speech_norm[i], video["video_id"], video["title"][:60],
+        )
         if score > best_score:
             best_score = score
             best_idx = i
