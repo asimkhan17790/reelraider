@@ -20,7 +20,7 @@ def _configure_logging():
     )
 
 
-def run_pipeline():
+def run_pipeline(n: int = 1):
     logger.info("Pipeline starting — discovering viral videos")
     videos = find_viral_videos_by_keyword()
     logger.info("Discovery complete: %d candidates found", len(videos))
@@ -32,42 +32,41 @@ def run_pipeline():
         logger.warning("No safe videos found — exiting pipeline")
         return
 
-    video = score_videos(videos, DISCOVERY_KEYWORD)
-    logger.info("Scorer selected: video_id=%s title=%r", video["video_id"], video["title"])
+    top_videos = score_videos(videos, DISCOVERY_KEYWORD, n=n)
+    logger.info("Scorer selected %d video(s) for processing", len(top_videos))
 
-    video_path = download_video(video)
-    if not video_path:
-        logger.error("Download failed for video_id=%s — exiting pipeline", video["video_id"])
-        return
+    for video in top_videos:
+        logger.info("Processing: video_id=%s title=%r", video["video_id"], video["title"])
 
-    clip_path = extract_clip(video_path, video["video_id"], metadata=video)
-    if not clip_path:
-        logger.error(
-            "Clip extraction failed for video_id=%s path=%s — exiting pipeline",
-            video["video_id"],
-            video_path,
-        )
-        return
+        video_path = download_video(video)
+        if not video_path:
+            logger.error("Download failed for video_id=%s — skipping", video["video_id"])
+            continue
 
-    # metadata = generate_caption(video)
-    # logger.info(
-    #     "Caption generated: video_id=%s caption_title=%r",
-    #     video["video_id"],
-    #     metadata["title"],
-    # )
+        clip_path = extract_clip(video_path, video["video_id"], metadata=video)
+        if not clip_path:
+            logger.error(
+                "Clip extraction failed for video_id=%s path=%s — skipping",
+                video["video_id"],
+                video_path,
+            )
+            continue
 
-    # upload_clip(clip_path, metadata)
-    # logger.info("Pipeline complete")
+        logger.info("Clip ready: video_id=%s path=%s", video["video_id"], clip_path)
+
+        # metadata = generate_caption(video)
+        # upload_clip(clip_path, metadata)
 
 
 def cli():
     _configure_logging()
     parser = argparse.ArgumentParser(description="ReelRaider YouTube clip pipeline")
     parser.add_argument("--once", action="store_true", help="Run pipeline once without scheduler")
+    parser.add_argument("--count", type=int, default=1, help="Number of top videos to download and clip (default: 1)")
     args = parser.parse_args()
 
     if args.once:
-        run_pipeline()
+        run_pipeline(n=args.count)
     else:
         from scheduler import start_scheduler
         start_scheduler()
