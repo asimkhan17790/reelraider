@@ -1,7 +1,7 @@
 # Graph Report - /Users/maverickhan17/Projects/reelraider  (2026-05-30)
 
 ## Corpus Check
-- 12 files · ~30,357 words
+- 12 files · ~30,139 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
