@@ -110,9 +110,9 @@
       "file_type": "rationale",
       "source_file": "test_discovery_scoring.py",
       "source_location": "L1",
-      "id": "test_discovery_scoring_rationale_1",
       "community": 7,
-      "norm_label": "quick smoke test: discovery \u2192 copyright_check \u2192 scorer. no download/clip/upload."
+      "norm_label": "quick smoke test: discovery \u2192 copyright_check \u2192 scorer. no download/clip/upload.",
+      "id": "test_discovery_scoring_rationale_1"
     },
     {
       "label": "config.py",
@@ -488,9 +488,9 @@
       "file_type": "rationale",
       "source_file": "pipeline/scorer.py",
       "source_location": "L92",
-      "id": "scorer_rationale_92",
       "community": 7,
-      "norm_label": "score all candidate videos and return the top-n highest-scoring ones."
+      "norm_label": "score all candidate videos and return the top-n highest-scoring ones.",
+      "id": "scorer_rationale_92"
     },
     {
       "label": "Pipeline (linear flow)",
@@ -501,9 +501,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_pipeline",
       "community": 1,
-      "norm_label": "pipeline (linear flow)"
+      "norm_label": "pipeline (linear flow)",
+      "id": "architecture_pipeline"
     },
     {
       "label": "discovery.py",
@@ -514,9 +514,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_discovery",
       "community": 1,
-      "norm_label": "discovery.py"
+      "norm_label": "discovery.py",
+      "id": "architecture_discovery"
     },
     {
       "label": "copyright_check.py",
@@ -527,9 +527,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_copyright_check",
       "community": 1,
-      "norm_label": "copyright_check.py"
+      "norm_label": "copyright_check.py",
+      "id": "architecture_copyright_check"
     },
     {
       "label": "downloader.py",
@@ -540,9 +540,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_downloader",
       "community": 1,
-      "norm_label": "downloader.py"
+      "norm_label": "downloader.py",
+      "id": "architecture_downloader"
     },
     {
       "label": "clipper.py",
@@ -553,9 +553,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_clipper",
       "community": 0,
-      "norm_label": "clipper.py"
+      "norm_label": "clipper.py",
+      "id": "architecture_clipper"
     },
     {
       "label": "caption_gen.py",
@@ -566,9 +566,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_caption_gen",
       "community": 1,
-      "norm_label": "caption_gen.py"
+      "norm_label": "caption_gen.py",
+      "id": "architecture_caption_gen"
     },
     {
       "label": "uploader.py",
@@ -579,9 +579,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_uploader",
       "community": 1,
-      "norm_label": "uploader.py"
+      "norm_label": "uploader.py",
+      "id": "architecture_uploader"
     },
     {
       "label": "scheduler.py",
@@ -592,9 +592,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_scheduler",
       "community": 1,
-      "norm_label": "scheduler.py"
+      "norm_label": "scheduler.py",
+      "id": "architecture_scheduler"
     },
     {
       "label": "config.py",
@@ -605,9 +605,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_config",
       "community": 1,
-      "norm_label": "config.py"
+      "norm_label": "config.py",
+      "id": "architecture_config"
     },
     {
       "label": "Video dict data shape",
@@ -618,9 +618,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "architecture_video_data_shape",
       "community": 1,
-      "norm_label": "video dict data shape"
+      "norm_label": "video dict data shape",
+      "id": "architecture_video_data_shape"
     },
     {
       "label": "ReelRaider Project",
@@ -631,9 +631,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_reelraider",
       "community": 1,
-      "norm_label": "reelraider project"
+      "norm_label": "reelraider project",
+      "id": "readme_reelraider"
     },
     {
       "label": "Environment Variables",
@@ -644,9 +644,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "readme_env_vars",
       "community": 1,
-      "norm_label": "environment variables"
+      "norm_label": "environment variables",
+      "id": "readme_env_vars"
     },
     {
       "label": "Pipeline architecture (CLAUDE.md)",
@@ -657,9 +657,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_pipeline_architecture",
       "community": 1,
-      "norm_label": "pipeline architecture (claude.md)"
+      "norm_label": "pipeline architecture (claude.md)",
+      "id": "claude_pipeline_architecture"
     },
     {
       "label": "Graphify knowledge graph rules",
@@ -670,9 +670,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "claude_graphify_rules",
       "community": 15,
-      "norm_label": "graphify knowledge graph rules"
+      "norm_label": "graphify knowledge graph rules",
+      "id": "claude_graphify_rules"
     },
     {
       "label": "Video Scorer Implementation Plan",
@@ -683,9 +683,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_plan",
       "community": 4,
-      "norm_label": "video scorer implementation plan"
+      "norm_label": "video scorer implementation plan",
+      "id": "video_scorer_plan"
     },
     {
       "label": "pipeline/scorer.py",
@@ -696,9 +696,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_scorer_py",
       "community": 4,
-      "norm_label": "pipeline/scorer.py"
+      "norm_label": "pipeline/scorer.py",
+      "id": "video_scorer_scorer_py"
     },
     {
       "label": "Scoring model (8 signals)",
@@ -709,9 +709,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_scoring_model",
       "community": 4,
-      "norm_label": "scoring model (8 signals)"
+      "norm_label": "scoring model (8 signals)",
+      "id": "video_scorer_scoring_model"
     },
     {
       "label": "score_videos() function",
@@ -722,9 +722,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_score_videos_fn",
       "community": 4,
-      "norm_label": "score_videos() function"
+      "norm_label": "score_videos() function",
+      "id": "video_scorer_score_videos_fn"
     },
     {
       "label": "_norm() min-max normalization",
@@ -735,9 +735,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_norm_fn",
       "community": 4,
-      "norm_label": "_norm() min-max normalization"
+      "norm_label": "_norm() min-max normalization",
+      "id": "video_scorer_norm_fn"
     },
     {
       "label": "_seo_score() helper",
@@ -748,9 +748,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_seo_fn",
       "community": 4,
-      "norm_label": "_seo_score() helper"
+      "norm_label": "_seo_score() helper",
+      "id": "video_scorer_seo_fn"
     },
     {
       "label": "_title_hook_score() helper",
@@ -761,9 +761,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_title_hook_fn",
       "community": 4,
-      "norm_label": "_title_hook_score() helper"
+      "norm_label": "_title_hook_score() helper",
+      "id": "video_scorer_title_hook_fn"
     },
     {
       "label": "_quality_score() helper",
@@ -774,9 +774,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_quality_fn",
       "community": 4,
-      "norm_label": "_quality_score() helper"
+      "norm_label": "_quality_score() helper",
+      "id": "video_scorer_quality_fn"
     },
     {
       "label": "_days_since() helper",
@@ -787,9 +787,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_days_since_fn",
       "community": 4,
-      "norm_label": "_days_since() helper"
+      "norm_label": "_days_since() helper",
+      "id": "video_scorer_days_since_fn"
     },
     {
       "label": "Discovery Metadata Extension Task",
@@ -800,9 +800,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_discovery_extension",
       "community": 4,
-      "norm_label": "discovery metadata extension task"
+      "norm_label": "discovery metadata extension task",
+      "id": "video_scorer_discovery_extension"
     },
     {
       "label": "Pipeline Wiring Task (score_videos in main.py)",
@@ -813,9 +813,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_pipeline_wiring",
       "community": 4,
-      "norm_label": "pipeline wiring task (score_videos in main.py)"
+      "norm_label": "pipeline wiring task (score_videos in main.py)",
+      "id": "video_scorer_pipeline_wiring"
     },
     {
       "label": "Scoring weight tuning (future/heuristic rationale)",
@@ -826,9 +826,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_weight_tuning_rationale",
       "community": 4,
-      "norm_label": "scoring weight tuning (future/heuristic rationale)"
+      "norm_label": "scoring weight tuning (future/heuristic rationale)",
+      "id": "video_scorer_weight_tuning_rationale"
     },
     {
       "label": "Graph Report Community Structure",
@@ -839,9 +839,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graph_report_communities",
       "community": 16,
-      "norm_label": "graph report community structure"
+      "norm_label": "graph report community structure",
+      "id": "graph_report_communities"
     },
     {
       "label": "God Nodes (most connected)",
@@ -852,9 +852,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graph_report_god_nodes",
       "community": 17,
-      "norm_label": "god nodes (most connected)"
+      "norm_label": "god nodes (most connected)",
+      "id": "graph_report_god_nodes"
     },
     {
       "label": "Knowledge Gaps",
@@ -865,9 +865,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "graph_report_knowledge_gaps",
       "community": 18,
-      "norm_label": "knowledge gaps"
+      "norm_label": "knowledge gaps",
+      "id": "graph_report_knowledge_gaps"
     },
     {
       "label": "Spec: Greedy non-overlapping segment selection",
@@ -878,9 +878,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_segment_greedy_selection",
       "community": 0,
-      "norm_label": "spec: greedy non-overlapping segment selection"
+      "norm_label": "spec: greedy non-overlapping segment selection",
+      "id": "spec_segment_greedy_selection"
     },
     {
       "label": "Spec: Source video shorter than target duration fallback",
@@ -891,9 +891,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_segment_short_video_fallback",
       "community": 0,
-      "norm_label": "spec: source video shorter than target duration fallback"
+      "norm_label": "spec: source video shorter than target duration fallback",
+      "id": "spec_segment_short_video_fallback"
     },
     {
       "label": "Spec: Chronological ordering of selected segments",
@@ -904,9 +904,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_segment_chronological_ordering",
       "community": 0,
-      "norm_label": "spec: chronological ordering of selected segments"
+      "norm_label": "spec: chronological ordering of selected segments",
+      "id": "spec_segment_chronological_ordering"
     },
     {
       "label": "Segment config parameters (SHORT_TOTAL_DURATION, SHORT_SEGMENT_DURATION, SHORT_SCORING_STEP)",
@@ -917,9 +917,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_segment_config_params",
       "community": 1,
-      "norm_label": "segment config parameters (short_total_duration, short_segment_duration, short_scoring_step)"
+      "norm_label": "segment config parameters (short_total_duration, short_segment_duration, short_scoring_step)",
+      "id": "spec_segment_config_params"
     },
     {
       "label": "Spec: Center crop 16:9 to 9:16",
@@ -930,9 +930,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_vertical_crop_center",
       "community": 0,
-      "norm_label": "spec: center crop 16:9 to 9:16"
+      "norm_label": "spec: center crop 16:9 to 9:16",
+      "id": "spec_vertical_crop_center"
     },
     {
       "label": "Spec: Crop applied during segment extraction (single ffmpeg pass)",
@@ -943,9 +943,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_vertical_crop_single_pass",
       "community": 0,
-      "norm_label": "spec: crop applied during segment extraction (single ffmpeg pass)"
+      "norm_label": "spec: crop applied during segment extraction (single ffmpeg pass)",
+      "id": "spec_vertical_crop_single_pass"
     },
     {
       "label": "Spec: Output codec H.264",
@@ -956,9 +956,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_vertical_crop_h264",
       "community": 0,
-      "norm_label": "spec: output codec h.264"
+      "norm_label": "spec: output codec h.264",
+      "id": "spec_vertical_crop_h264"
     },
     {
       "label": "SHORT_CROP_MODE config (center only in v1)",
@@ -969,9 +969,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_vertical_crop_mode_config",
       "community": 1,
-      "norm_label": "short_crop_mode config (center only in v1)"
+      "norm_label": "short_crop_mode config (center only in v1)",
+      "id": "spec_vertical_crop_mode_config"
     },
     {
       "label": "Spec: Crossfade stitch via ffmpeg filter_complex",
@@ -982,9 +982,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_clip_stitching_xfade",
       "community": 0,
-      "norm_label": "spec: crossfade stitch via ffmpeg filter_complex"
+      "norm_label": "spec: crossfade stitch via ffmpeg filter_complex",
+      "id": "spec_clip_stitching_xfade"
     },
     {
       "label": "Spec: Single segment passthrough",
@@ -995,9 +995,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_clip_stitching_single_passthrough",
       "community": 0,
-      "norm_label": "spec: single segment passthrough"
+      "norm_label": "spec: single segment passthrough",
+      "id": "spec_clip_stitching_single_passthrough"
     },
     {
       "label": "Spec: Temporary segment cleanup",
@@ -1008,9 +1008,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_clip_stitching_temp_cleanup",
       "community": 0,
-      "norm_label": "spec: temporary segment cleanup"
+      "norm_label": "spec: temporary segment cleanup",
+      "id": "spec_clip_stitching_temp_cleanup"
     },
     {
       "label": "Spec: Output file naming {video_id}_clip.mp4",
@@ -1021,9 +1021,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_clip_stitching_output_naming",
       "community": 0,
-      "norm_label": "spec: output file naming {video_id}_clip.mp4"
+      "norm_label": "spec: output file naming {video_id}_clip.mp4",
+      "id": "spec_clip_stitching_output_naming"
     },
     {
       "label": "SHORT_TRANSITION_DURATION config (default 0.3)",
@@ -1034,9 +1034,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_clip_stitching_transition_config",
       "community": 1,
-      "norm_label": "short_transition_duration config (default 0.3)"
+      "norm_label": "short_transition_duration config (default 0.3)",
+      "id": "spec_clip_stitching_transition_config"
     },
     {
       "label": "Spec: Composite multi-signal window scoring",
@@ -1047,9 +1047,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_highlight_scoring_composite",
       "community": 0,
-      "norm_label": "spec: composite multi-signal window scoring"
+      "norm_label": "spec: composite multi-signal window scoring",
+      "id": "spec_highlight_scoring_composite"
     },
     {
       "label": "Spec: Spectral flux computation (librosa)",
@@ -1060,9 +1060,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_highlight_scoring_spectral_flux",
       "community": 0,
-      "norm_label": "spec: spectral flux computation (librosa)"
+      "norm_label": "spec: spectral flux computation (librosa)",
+      "id": "spec_highlight_scoring_spectral_flux"
     },
     {
       "label": "Spec: Scene change rate computation (ffmpeg)",
@@ -1073,9 +1073,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_highlight_scoring_scene_change",
       "community": 0,
-      "norm_label": "spec: scene change rate computation (ffmpeg)"
+      "norm_label": "spec: scene change rate computation (ffmpeg)",
+      "id": "spec_highlight_scoring_scene_change"
     },
     {
       "label": "Spec: Face density computation (OpenCV Haar Cascade)",
@@ -1086,9 +1086,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_highlight_scoring_face_density",
       "community": 0,
-      "norm_label": "spec: face density computation (opencv haar cascade)"
+      "norm_label": "spec: face density computation (opencv haar cascade)",
+      "id": "spec_highlight_scoring_face_density"
     },
     {
       "label": "Spec: Chapter marker bonus (+0.5)",
@@ -1099,9 +1099,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_highlight_scoring_chapter_bonus",
       "community": 0,
-      "norm_label": "spec: chapter marker bonus (+0.5)"
+      "norm_label": "spec: chapter marker bonus (+0.5)",
+      "id": "spec_highlight_scoring_chapter_bonus"
     },
     {
       "label": "DISCOVERY_KEYWORD Constant Spec",
@@ -1112,9 +1112,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_keyword_discovery_constant",
       "community": 1,
-      "norm_label": "discovery_keyword constant spec"
+      "norm_label": "discovery_keyword constant spec",
+      "id": "spec_keyword_discovery_constant"
     },
     {
       "label": "Statistics Enrichment Spec (search \u2192 videos.list)",
@@ -1125,9 +1125,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_keyword_discovery_stats_enrichment",
       "community": 1,
-      "norm_label": "statistics enrichment spec (search \u2192 videos.list)"
+      "norm_label": "statistics enrichment spec (search \u2192 videos.list)",
+      "id": "spec_keyword_discovery_stats_enrichment"
     },
     {
       "label": "video_id format guard in discovery",
@@ -1138,9 +1138,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_keyword_discovery_video_id_guard",
       "community": 1,
-      "norm_label": "video_id format guard in discovery"
+      "norm_label": "video_id format guard in discovery",
+      "id": "spec_keyword_discovery_video_id_guard"
     },
     {
       "label": "Spec: Composite video scoring (score_videos)",
@@ -1151,9 +1151,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_video_scoring_composite",
       "community": 4,
-      "norm_label": "spec: composite video scoring (score_videos)"
+      "norm_label": "spec: composite video scoring (score_videos)",
+      "id": "spec_video_scoring_composite"
     },
     {
       "label": "score_videos() \u2014 no mutation of input dicts",
@@ -1164,9 +1164,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_video_scoring_no_mutation",
       "community": 4,
-      "norm_label": "score_videos() \u2014 no mutation of input dicts"
+      "norm_label": "score_videos() \u2014 no mutation of input dicts",
+      "id": "spec_video_scoring_no_mutation"
     },
     {
       "label": "video_id format validation (pipeline-hardening)",
@@ -1177,9 +1177,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_pipeline_hardening_video_id_validation",
       "community": 1,
-      "norm_label": "video_id format validation (pipeline-hardening)"
+      "norm_label": "video_id format validation (pipeline-hardening)",
+      "id": "spec_pipeline_hardening_video_id_validation"
     },
     {
       "label": "Safe int casting on YouTube API stat fields",
@@ -1190,9 +1190,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_pipeline_hardening_safe_int",
       "community": 1,
-      "norm_label": "safe int casting on youtube api stat fields"
+      "norm_label": "safe int casting on youtube api stat fields",
+      "id": "spec_pipeline_hardening_safe_int"
     },
     {
       "label": "Scheduler job error containment",
@@ -1203,9 +1203,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_pipeline_hardening_scheduler_containment",
       "community": 1,
-      "norm_label": "scheduler job error containment"
+      "norm_label": "scheduler job error containment",
+      "id": "spec_pipeline_hardening_scheduler_containment"
     },
     {
       "label": "Upload loop max-chunk guard",
@@ -1216,9 +1216,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "spec_pipeline_hardening_upload_guard",
       "community": 1,
-      "norm_label": "upload loop max-chunk guard"
+      "norm_label": "upload loop max-chunk guard",
+      "id": "spec_pipeline_hardening_upload_guard"
     },
     {
       "label": "Highlight Shorts Clipper Tasks (archived)",
@@ -1229,9 +1229,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_highlight_clipper_tasks",
       "community": 0,
-      "norm_label": "highlight shorts clipper tasks (archived)"
+      "norm_label": "highlight shorts clipper tasks (archived)",
+      "id": "archive_highlight_clipper_tasks"
     },
     {
       "label": "Highlight Shorts Clipper Design (archived)",
@@ -1242,9 +1242,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_highlight_clipper_design",
       "community": 0,
-      "norm_label": "highlight shorts clipper design (archived)"
+      "norm_label": "highlight shorts clipper design (archived)",
+      "id": "archive_highlight_clipper_design"
     },
     {
       "label": "Highlight Shorts Clipper Proposal (archived)",
@@ -1255,9 +1255,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_highlight_clipper_proposal",
       "community": 0,
-      "norm_label": "highlight shorts clipper proposal (archived)"
+      "norm_label": "highlight shorts clipper proposal (archived)",
+      "id": "archive_highlight_clipper_proposal"
     },
     {
       "label": "D1: Composite scoring rationale (signal sum vs ML)",
@@ -1268,9 +1268,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_design_d1_composite_scoring_rationale",
       "community": 0,
-      "norm_label": "d1: composite scoring rationale (signal sum vs ml)"
+      "norm_label": "d1: composite scoring rationale (signal sum vs ml)",
+      "id": "archive_design_d1_composite_scoring_rationale"
     },
     {
       "label": "D2: Greedy selection rationale (vs DP)",
@@ -1281,9 +1281,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_design_d2_greedy_selection_rationale",
       "community": 0,
-      "norm_label": "d2: greedy selection rationale (vs dp)"
+      "norm_label": "d2: greedy selection rationale (vs dp)",
+      "id": "archive_design_d2_greedy_selection_rationale"
     },
     {
       "label": "D3: ffmpeg two-pass (segment + stitch) rationale (vs moviepy)",
@@ -1294,9 +1294,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_design_d3_ffmpeg_two_pass_rationale",
       "community": 0,
-      "norm_label": "d3: ffmpeg two-pass (segment + stitch) rationale (vs moviepy)"
+      "norm_label": "d3: ffmpeg two-pass (segment + stitch) rationale (vs moviepy)",
+      "id": "archive_design_d3_ffmpeg_two_pass_rationale"
     },
     {
       "label": "D4: Face density via OpenCV Haar (vs mediapipe)",
@@ -1307,9 +1307,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_design_d4_face_density_rationale",
       "community": 0,
-      "norm_label": "d4: face density via opencv haar (vs mediapipe)"
+      "norm_label": "d4: face density via opencv haar (vs mediapipe)",
+      "id": "archive_design_d4_face_density_rationale"
     },
     {
       "label": "D5: Scene change via ffmpeg select (vs PySceneDetect)",
@@ -1320,9 +1320,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_design_d5_scene_change_rationale",
       "community": 0,
-      "norm_label": "d5: scene change via ffmpeg select (vs pyscenedetect)"
+      "norm_label": "d5: scene change via ffmpeg select (vs pyscenedetect)",
+      "id": "archive_design_d5_scene_change_rationale"
     },
     {
       "label": "Archive Spec: Greedy non-overlapping segment selection",
@@ -1333,9 +1333,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_segment_selection_spec",
       "community": 0,
-      "norm_label": "archive spec: greedy non-overlapping segment selection"
+      "norm_label": "archive spec: greedy non-overlapping segment selection",
+      "id": "archive_segment_selection_spec"
     },
     {
       "label": "Archive Spec: Center crop 16:9 to 9:16",
@@ -1346,9 +1346,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_vertical_crop_spec",
       "community": 0,
-      "norm_label": "archive spec: center crop 16:9 to 9:16"
+      "norm_label": "archive spec: center crop 16:9 to 9:16",
+      "id": "archive_vertical_crop_spec"
     },
     {
       "label": "Archive Spec: Clip stitching (crossfade + passthrough)",
@@ -1359,9 +1359,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "archive_clip_stitching_spec",
       "community": 0,
-      "norm_label": "archive spec: clip stitching (crossfade + passthrough)"
+      "norm_label": "archive spec: clip stitching (crossfade + passthrough)",
+      "id": "archive_clip_stitching_spec"
     },
     {
       "label": "Composite Multi-Signal Window Scoring Requirement",
@@ -1372,9 +1372,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "highlight_scoring_spec_composite_window_scoring",
       "community": 2,
-      "norm_label": "composite multi-signal window scoring requirement"
+      "norm_label": "composite multi-signal window scoring requirement",
+      "id": "highlight_scoring_spec_composite_window_scoring"
     },
     {
       "label": "Spectral Flux Computation Requirement",
@@ -1385,9 +1385,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "highlight_scoring_spec_spectral_flux",
       "community": 2,
-      "norm_label": "spectral flux computation requirement"
+      "norm_label": "spectral flux computation requirement",
+      "id": "highlight_scoring_spec_spectral_flux"
     },
     {
       "label": "Scene Change Rate Computation Requirement",
@@ -1398,9 +1398,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "highlight_scoring_spec_scene_change_rate",
       "community": 2,
-      "norm_label": "scene change rate computation requirement"
+      "norm_label": "scene change rate computation requirement",
+      "id": "highlight_scoring_spec_scene_change_rate"
     },
     {
       "label": "Face Density Computation Requirement (Soft Dependency)",
@@ -1411,9 +1411,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "highlight_scoring_spec_face_density",
       "community": 2,
-      "norm_label": "face density computation requirement (soft dependency)"
+      "norm_label": "face density computation requirement (soft dependency)",
+      "id": "highlight_scoring_spec_face_density"
     },
     {
       "label": "Chapter Marker Bonus Requirement",
@@ -1424,9 +1424,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "highlight_scoring_spec_chapter_marker_bonus",
       "community": 2,
-      "norm_label": "chapter marker bonus requirement"
+      "norm_label": "chapter marker bonus requirement",
+      "id": "highlight_scoring_spec_chapter_marker_bonus"
     },
     {
       "label": "Video Scorer Tasks",
@@ -1437,9 +1437,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_tasks",
       "community": 2,
-      "norm_label": "video scorer tasks"
+      "norm_label": "video scorer tasks",
+      "id": "video_scorer_tasks"
     },
     {
       "label": "Video Scorer Design Document",
@@ -1450,9 +1450,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_design",
       "community": 2,
-      "norm_label": "video scorer design document"
+      "norm_label": "video scorer design document",
+      "id": "video_scorer_design"
     },
     {
       "label": "Video Scorer Proposal",
@@ -1463,9 +1463,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_proposal",
       "community": 8,
-      "norm_label": "video scorer proposal"
+      "norm_label": "video scorer proposal",
+      "id": "video_scorer_proposal"
     },
     {
       "label": "D1: Min-Max Normalization Per Batch Rationale",
@@ -1476,9 +1476,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_design_d1_minmax",
       "community": 2,
-      "norm_label": "d1: min-max normalization per batch rationale"
+      "norm_label": "d1: min-max normalization per batch rationale",
+      "id": "video_scorer_design_d1_minmax"
     },
     {
       "label": "D2: Velocity Equal Weight to View Count Rationale",
@@ -1489,9 +1489,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_design_d2_velocity",
       "community": 2,
-      "norm_label": "d2: velocity equal weight to view count rationale"
+      "norm_label": "d2: velocity equal weight to view count rationale",
+      "id": "video_scorer_design_d2_velocity"
     },
     {
       "label": "D3: contentDetails in Existing API Call Rationale",
@@ -1502,9 +1502,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_design_d3_contentdetails",
       "community": 8,
-      "norm_label": "d3: contentdetails in existing api call rationale"
+      "norm_label": "d3: contentdetails in existing api call rationale",
+      "id": "video_scorer_design_d3_contentdetails"
     },
     {
       "label": "D4: Scorer Returns Dict With _score Rationale",
@@ -1515,9 +1515,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_design_d4_score_annotation",
       "community": 2,
-      "norm_label": "d4: scorer returns dict with _score rationale"
+      "norm_label": "d4: scorer returns dict with _score rationale",
+      "id": "video_scorer_design_d4_score_annotation"
     },
     {
       "label": "D5: score_videos Raises ValueError on Empty Input Rationale",
@@ -1528,9 +1528,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_design_d5_valueerror",
       "community": 2,
-      "norm_label": "d5: score_videos raises valueerror on empty input rationale"
+      "norm_label": "d5: score_videos raises valueerror on empty input rationale",
+      "id": "video_scorer_design_d5_valueerror"
     },
     {
       "label": "Composite Video Scoring Requirement",
@@ -1541,9 +1541,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_spec_composite_scoring",
       "community": 2,
-      "norm_label": "composite video scoring requirement"
+      "norm_label": "composite video scoring requirement",
+      "id": "video_scorer_spec_composite_scoring"
     },
     {
       "label": "Min-Max Normalization Per Batch Requirement",
@@ -1554,9 +1554,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_spec_minmax_normalization",
       "community": 2,
-      "norm_label": "min-max normalization per batch requirement"
+      "norm_label": "min-max normalization per batch requirement",
+      "id": "video_scorer_spec_minmax_normalization"
     },
     {
       "label": "View Velocity Signal Requirement",
@@ -1567,9 +1567,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_spec_velocity_signal",
       "community": 2,
-      "norm_label": "view velocity signal requirement"
+      "norm_label": "view velocity signal requirement",
+      "id": "video_scorer_spec_velocity_signal"
     },
     {
       "label": "SEO Sub-Score Requirement",
@@ -1580,9 +1580,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_spec_seo_subscore",
       "community": 2,
-      "norm_label": "seo sub-score requirement"
+      "norm_label": "seo sub-score requirement",
+      "id": "video_scorer_spec_seo_subscore"
     },
     {
       "label": "Title Hook Sub-Score Requirement",
@@ -1593,9 +1593,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_spec_title_hook",
       "community": 2,
-      "norm_label": "title hook sub-score requirement"
+      "norm_label": "title hook sub-score requirement",
+      "id": "video_scorer_spec_title_hook"
     },
     {
       "label": "Quality Sub-Score Requirement",
@@ -1606,9 +1606,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_spec_quality_subscore",
       "community": 2,
-      "norm_label": "quality sub-score requirement"
+      "norm_label": "quality sub-score requirement",
+      "id": "video_scorer_spec_quality_subscore"
     },
     {
       "label": "Score Logging Requirement",
@@ -1619,9 +1619,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_spec_score_logging",
       "community": 2,
-      "norm_label": "score logging requirement"
+      "norm_label": "score logging requirement",
+      "id": "video_scorer_spec_score_logging"
     },
     {
       "label": "Statistics Enrichment via Second API Call (Video Scorer)",
@@ -1632,9 +1632,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "video_scorer_kwd_spec_statistics_enrichment",
       "community": 8,
-      "norm_label": "statistics enrichment via second api call (video scorer)"
+      "norm_label": "statistics enrichment via second api call (video scorer)",
+      "id": "video_scorer_kwd_spec_statistics_enrichment"
     },
     {
       "label": "Security Code Remediation Tasks",
@@ -1645,9 +1645,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_remediation_tasks",
       "community": 5,
-      "norm_label": "security code remediation tasks"
+      "norm_label": "security code remediation tasks",
+      "id": "security_remediation_tasks"
     },
     {
       "label": "Security Code Remediation Design Document",
@@ -1658,9 +1658,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_remediation_design",
       "community": 19,
-      "norm_label": "security code remediation design document"
+      "norm_label": "security code remediation design document",
+      "id": "security_remediation_design"
     },
     {
       "label": "Security Code Remediation Proposal",
@@ -1671,9 +1671,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_remediation_proposal",
       "community": 5,
-      "norm_label": "security code remediation proposal"
+      "norm_label": "security code remediation proposal",
+      "id": "security_remediation_proposal"
     },
     {
       "label": "D1: Multiagent Fix Dispatch Rationale",
@@ -1684,9 +1684,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_remediation_design_d1_multiagent",
       "community": 5,
-      "norm_label": "d1: multiagent fix dispatch rationale"
+      "norm_label": "d1: multiagent fix dispatch rationale",
+      "id": "security_remediation_design_d1_multiagent"
     },
     {
       "label": "D2: Prompt Injection XML Delimiter Approach Rationale",
@@ -1697,9 +1697,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_remediation_design_d2_prompt_injection",
       "community": 8,
-      "norm_label": "d2: prompt injection xml delimiter approach rationale"
+      "norm_label": "d2: prompt injection xml delimiter approach rationale",
+      "id": "security_remediation_design_d2_prompt_injection"
     },
     {
       "label": "D3: DISCOVERY_KEYWORD Consolidation Rationale",
@@ -1710,9 +1710,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_remediation_design_d3_keyword_consolidation",
       "community": 5,
-      "norm_label": "d3: discovery_keyword consolidation rationale"
+      "norm_label": "d3: discovery_keyword consolidation rationale",
+      "id": "security_remediation_design_d3_keyword_consolidation"
     },
     {
       "label": "D4: CC License Check Simplification Rationale",
@@ -1723,9 +1723,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_remediation_design_d4_cc_check",
       "community": 5,
-      "norm_label": "d4: cc license check simplification rationale"
+      "norm_label": "d4: cc license check simplification rationale",
+      "id": "security_remediation_design_d4_cc_check"
     },
     {
       "label": "D5: token.json Permissions via os.open Rationale",
@@ -1736,9 +1736,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_remediation_design_d5_token_permissions",
       "community": 5,
-      "norm_label": "d5: token.json permissions via os.open rationale"
+      "norm_label": "d5: token.json permissions via os.open rationale",
+      "id": "security_remediation_design_d5_token_permissions"
     },
     {
       "label": "DISCOVERY_KEYWORD Canonical Source Requirement",
@@ -1749,9 +1749,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_kwd_spec_discovery_keyword",
       "community": 5,
-      "norm_label": "discovery_keyword canonical source requirement"
+      "norm_label": "discovery_keyword canonical source requirement",
+      "id": "security_kwd_spec_discovery_keyword"
     },
     {
       "label": "Statistics Enrichment Safe Int Casting Requirement",
@@ -1762,9 +1762,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_kwd_spec_statistics_enrichment",
       "community": 8,
-      "norm_label": "statistics enrichment safe int casting requirement"
+      "norm_label": "statistics enrichment safe int casting requirement",
+      "id": "security_kwd_spec_statistics_enrichment"
     },
     {
       "label": "video_id Format Guard in Discovery Requirement",
@@ -1775,9 +1775,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_kwd_spec_video_id_guard_discovery",
       "community": 5,
-      "norm_label": "video_id format guard in discovery requirement"
+      "norm_label": "video_id format guard in discovery requirement",
+      "id": "security_kwd_spec_video_id_guard_discovery"
     },
     {
       "label": "Composite Video Scoring No Dict Mutation Requirement",
@@ -1788,9 +1788,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_scoring_spec_no_mutation",
       "community": 5,
-      "norm_label": "composite video scoring no dict mutation requirement"
+      "norm_label": "composite video scoring no dict mutation requirement",
+      "id": "security_scoring_spec_no_mutation"
     },
     {
       "label": "video_id Format Validation Requirement",
@@ -1801,9 +1801,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_hardening_spec_video_id_validation",
       "community": 5,
-      "norm_label": "video_id format validation requirement"
+      "norm_label": "video_id format validation requirement",
+      "id": "security_hardening_spec_video_id_validation"
     },
     {
       "label": "Safe Int Casting on YouTube API Stat Fields Requirement",
@@ -1814,9 +1814,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_hardening_spec_safe_int_cast",
       "community": 8,
-      "norm_label": "safe int casting on youtube api stat fields requirement"
+      "norm_label": "safe int casting on youtube api stat fields requirement",
+      "id": "security_hardening_spec_safe_int_cast"
     },
     {
       "label": "Scheduler Job Error Containment Requirement",
@@ -1827,9 +1827,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_hardening_spec_scheduler_containment",
       "community": 5,
-      "norm_label": "scheduler job error containment requirement"
+      "norm_label": "scheduler job error containment requirement",
+      "id": "security_hardening_spec_scheduler_containment"
     },
     {
       "label": "Upload Loop Max-Chunk Guard Requirement",
@@ -1840,9 +1840,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "security_hardening_spec_upload_loop_guard",
       "community": 5,
-      "norm_label": "upload loop max-chunk guard requirement"
+      "norm_label": "upload loop max-chunk guard requirement",
+      "id": "security_hardening_spec_upload_loop_guard"
     },
     {
       "label": "Keyword-Based Video Discovery Tasks",
@@ -1853,9 +1853,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_tasks",
       "community": 9,
-      "norm_label": "keyword-based video discovery tasks"
+      "norm_label": "keyword-based video discovery tasks",
+      "id": "kwd_discovery_tasks"
     },
     {
       "label": "Keyword-Based Video Discovery Design Document",
@@ -1866,9 +1866,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_design",
       "community": 9,
-      "norm_label": "keyword-based video discovery design document"
+      "norm_label": "keyword-based video discovery design document",
+      "id": "kwd_discovery_design"
     },
     {
       "label": "Keyword-Based Video Discovery Proposal",
@@ -1879,9 +1879,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_proposal",
       "community": 9,
-      "norm_label": "keyword-based video discovery proposal"
+      "norm_label": "keyword-based video discovery proposal",
+      "id": "kwd_discovery_proposal"
     },
     {
       "label": "D1: Two-Step API (search \u2192 videos.list) Rationale",
@@ -1892,9 +1892,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_design_d1_two_step",
       "community": 8,
-      "norm_label": "d1: two-step api (search \u2192 videos.list) rationale"
+      "norm_label": "d1: two-step api (search \u2192 videos.list) rationale",
+      "id": "kwd_discovery_design_d1_two_step"
     },
     {
       "label": "D2: Keep videoLicense Filter + copyright_check Belt-and-Suspenders Rationale",
@@ -1905,9 +1905,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_design_d2_cc_belt_suspenders",
       "community": 12,
-      "norm_label": "d2: keep videolicense filter + copyright_check belt-and-suspenders rationale"
+      "norm_label": "d2: keep videolicense filter + copyright_check belt-and-suspenders rationale",
+      "id": "kwd_discovery_design_d2_cc_belt_suspenders"
     },
     {
       "label": "D3: Transcript via youtube-transcript-api Flat String Rationale",
@@ -1918,9 +1918,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_design_d3_transcript",
       "community": 9,
-      "norm_label": "d3: transcript via youtube-transcript-api flat string rationale"
+      "norm_label": "d3: transcript via youtube-transcript-api flat string rationale",
+      "id": "kwd_discovery_design_d3_transcript"
     },
     {
       "label": "D4: DISCOVERY_KEYWORD Constant + Default Parameter Rationale",
@@ -1931,9 +1931,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_design_d4_keyword_constant",
       "community": 5,
-      "norm_label": "d4: discovery_keyword constant + default parameter rationale"
+      "norm_label": "d4: discovery_keyword constant + default parameter rationale",
+      "id": "kwd_discovery_design_d4_keyword_constant"
     },
     {
       "label": "Keyword-Based Video Search Requirement",
@@ -1944,9 +1944,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_spec_keyword_search",
       "community": 9,
-      "norm_label": "keyword-based video search requirement"
+      "norm_label": "keyword-based video search requirement",
+      "id": "kwd_discovery_spec_keyword_search"
     },
     {
       "label": "Hardcoded Default Keyword Constant Requirement",
@@ -1957,9 +1957,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_spec_keyword_constant",
       "community": 5,
-      "norm_label": "hardcoded default keyword constant requirement"
+      "norm_label": "hardcoded default keyword constant requirement",
+      "id": "kwd_discovery_spec_keyword_constant"
     },
     {
       "label": "Statistics Enrichment via Second API Call Requirement",
@@ -1970,9 +1970,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_spec_statistics_enrichment",
       "community": 8,
-      "norm_label": "statistics enrichment via second api call requirement"
+      "norm_label": "statistics enrichment via second api call requirement",
+      "id": "kwd_discovery_spec_statistics_enrichment"
     },
     {
       "label": "Creative Commons Pre-Filter in Search Requirement",
@@ -1983,9 +1983,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_spec_cc_prefilter",
       "community": 12,
-      "norm_label": "creative commons pre-filter in search requirement"
+      "norm_label": "creative commons pre-filter in search requirement",
+      "id": "kwd_discovery_spec_cc_prefilter"
     },
     {
       "label": "Transcript Metadata Attachment Requirement",
@@ -1996,9 +1996,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_spec_transcript_attachment",
       "community": 9,
-      "norm_label": "transcript metadata attachment requirement"
+      "norm_label": "transcript metadata attachment requirement",
+      "id": "kwd_discovery_spec_transcript_attachment"
     },
     {
       "label": "Existing Discovery Function Preserved Requirement",
@@ -2009,9 +2009,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "id": "kwd_discovery_spec_existing_preserved",
       "community": 20,
-      "norm_label": "existing discovery function preserved requirement"
+      "norm_label": "existing discovery function preserved requirement",
+      "id": "kwd_discovery_spec_existing_preserved"
     }
   ],
   "links": [
@@ -2190,8 +2190,8 @@
       "source_file": "main.py",
       "source_location": "L72",
       "weight": 1.0,
-      "_src": "main_cli",
-      "_tgt": "scheduler_start_scheduler",
+      "_src": "scheduler_start_scheduler",
+      "_tgt": "main_cli",
       "source": "scheduler_start_scheduler",
       "target": "main_cli"
     },
@@ -2934,8 +2934,8 @@
       "source_file": "ARCHITECTURE.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "architecture_scheduler",
-      "_tgt": "architecture_pipeline",
+      "_src": "architecture_pipeline",
+      "_tgt": "architecture_scheduler",
       "source": "architecture_pipeline",
       "target": "architecture_scheduler"
     },
@@ -2958,8 +2958,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "readme_reelraider",
-      "_tgt": "architecture_pipeline",
+      "_src": "architecture_pipeline",
+      "_tgt": "readme_reelraider",
       "source": "architecture_pipeline",
       "target": "readme_reelraider"
     },
@@ -2970,8 +2970,8 @@
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "claude_pipeline_architecture",
-      "_tgt": "architecture_pipeline",
+      "_src": "architecture_pipeline",
+      "_tgt": "claude_pipeline_architecture",
       "source": "architecture_pipeline",
       "target": "claude_pipeline_architecture"
     },
@@ -2982,8 +2982,8 @@
       "source_file": "docs/superpowers/plans/2026-05-16-video-scorer.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "video_scorer_pipeline_wiring",
-      "_tgt": "architecture_pipeline",
+      "_src": "architecture_pipeline",
+      "_tgt": "video_scorer_pipeline_wiring",
       "source": "architecture_pipeline",
       "target": "video_scorer_pipeline_wiring"
     },
@@ -3006,8 +3006,8 @@
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "claude_pipeline_architecture",
-      "_tgt": "architecture_discovery",
+      "_src": "architecture_discovery",
+      "_tgt": "claude_pipeline_architecture",
       "source": "architecture_discovery",
       "target": "claude_pipeline_architecture"
     },
@@ -3018,8 +3018,8 @@
       "source_file": "docs/superpowers/plans/2026-05-16-video-scorer.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "video_scorer_plan",
-      "_tgt": "architecture_discovery",
+      "_src": "architecture_discovery",
+      "_tgt": "video_scorer_plan",
       "source": "architecture_discovery",
       "target": "video_scorer_plan"
     },
@@ -3030,8 +3030,8 @@
       "source_file": "openspec/specs/keyword-video-discovery/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_keyword_discovery_constant",
-      "_tgt": "architecture_discovery",
+      "_src": "architecture_discovery",
+      "_tgt": "spec_keyword_discovery_constant",
       "source": "architecture_discovery",
       "target": "spec_keyword_discovery_constant"
     },
@@ -3042,8 +3042,8 @@
       "source_file": "openspec/specs/keyword-video-discovery/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_keyword_discovery_stats_enrichment",
-      "_tgt": "architecture_discovery",
+      "_src": "architecture_discovery",
+      "_tgt": "spec_keyword_discovery_stats_enrichment",
       "source": "architecture_discovery",
       "target": "spec_keyword_discovery_stats_enrichment"
     },
@@ -3054,8 +3054,8 @@
       "source_file": "openspec/specs/pipeline-hardening/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_pipeline_hardening_video_id_validation",
-      "_tgt": "architecture_discovery",
+      "_src": "architecture_discovery",
+      "_tgt": "spec_pipeline_hardening_video_id_validation",
       "source": "architecture_discovery",
       "target": "spec_pipeline_hardening_video_id_validation"
     },
@@ -3066,8 +3066,8 @@
       "source_file": "openspec/specs/pipeline-hardening/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_pipeline_hardening_safe_int",
-      "_tgt": "architecture_discovery",
+      "_src": "architecture_discovery",
+      "_tgt": "spec_pipeline_hardening_safe_int",
       "source": "architecture_discovery",
       "target": "spec_pipeline_hardening_safe_int"
     },
@@ -3114,8 +3114,8 @@
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "claude_pipeline_architecture",
-      "_tgt": "architecture_clipper",
+      "_src": "architecture_clipper",
+      "_tgt": "claude_pipeline_architecture",
       "source": "architecture_clipper",
       "target": "claude_pipeline_architecture"
     },
@@ -3126,8 +3126,8 @@
       "source_file": "openspec/specs/segment-selection/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_segment_greedy_selection",
-      "_tgt": "architecture_clipper",
+      "_src": "architecture_clipper",
+      "_tgt": "spec_segment_greedy_selection",
       "source": "architecture_clipper",
       "target": "spec_segment_greedy_selection"
     },
@@ -3138,8 +3138,8 @@
       "source_file": "openspec/specs/vertical-crop/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_vertical_crop_center",
-      "_tgt": "architecture_clipper",
+      "_src": "architecture_clipper",
+      "_tgt": "spec_vertical_crop_center",
       "source": "architecture_clipper",
       "target": "spec_vertical_crop_center"
     },
@@ -3150,8 +3150,8 @@
       "source_file": "openspec/specs/clip-stitching/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_clip_stitching_xfade",
-      "_tgt": "architecture_clipper",
+      "_src": "architecture_clipper",
+      "_tgt": "spec_clip_stitching_xfade",
       "source": "architecture_clipper",
       "target": "spec_clip_stitching_xfade"
     },
@@ -3162,8 +3162,8 @@
       "source_file": "openspec/specs/highlight-scoring/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_highlight_scoring_composite",
-      "_tgt": "architecture_clipper",
+      "_src": "architecture_clipper",
+      "_tgt": "spec_highlight_scoring_composite",
       "source": "architecture_clipper",
       "target": "spec_highlight_scoring_composite"
     },
@@ -3174,8 +3174,8 @@
       "source_file": "openspec/specs/pipeline-hardening/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_pipeline_hardening_video_id_validation",
-      "_tgt": "architecture_clipper",
+      "_src": "architecture_clipper",
+      "_tgt": "spec_pipeline_hardening_video_id_validation",
       "source": "architecture_clipper",
       "target": "spec_pipeline_hardening_video_id_validation"
     },
@@ -3186,8 +3186,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/proposal.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_proposal",
-      "_tgt": "architecture_clipper",
+      "_src": "architecture_clipper",
+      "_tgt": "archive_highlight_clipper_proposal",
       "source": "architecture_clipper",
       "target": "archive_highlight_clipper_proposal"
     },
@@ -3198,8 +3198,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/tasks.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_tasks",
-      "_tgt": "architecture_clipper",
+      "_src": "architecture_clipper",
+      "_tgt": "archive_highlight_clipper_tasks",
       "source": "architecture_clipper",
       "target": "archive_highlight_clipper_tasks"
     },
@@ -3222,8 +3222,8 @@
       "source_file": "CLAUDE.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "claude_pipeline_architecture",
-      "_tgt": "architecture_caption_gen",
+      "_src": "architecture_caption_gen",
+      "_tgt": "claude_pipeline_architecture",
       "source": "architecture_caption_gen",
       "target": "claude_pipeline_architecture"
     },
@@ -3246,8 +3246,8 @@
       "source_file": "openspec/specs/pipeline-hardening/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_pipeline_hardening_upload_guard",
-      "_tgt": "architecture_uploader",
+      "_src": "architecture_uploader",
+      "_tgt": "spec_pipeline_hardening_upload_guard",
       "source": "architecture_uploader",
       "target": "spec_pipeline_hardening_upload_guard"
     },
@@ -3258,8 +3258,8 @@
       "source_file": "openspec/specs/pipeline-hardening/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_pipeline_hardening_scheduler_containment",
-      "_tgt": "architecture_scheduler",
+      "_src": "architecture_scheduler",
+      "_tgt": "spec_pipeline_hardening_scheduler_containment",
       "source": "architecture_scheduler",
       "target": "spec_pipeline_hardening_scheduler_containment"
     },
@@ -3270,8 +3270,8 @@
       "source_file": "README.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "readme_env_vars",
-      "_tgt": "architecture_config",
+      "_src": "architecture_config",
+      "_tgt": "readme_env_vars",
       "source": "architecture_config",
       "target": "readme_env_vars"
     },
@@ -3282,8 +3282,8 @@
       "source_file": "openspec/specs/segment-selection/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_segment_config_params",
-      "_tgt": "architecture_config",
+      "_src": "architecture_config",
+      "_tgt": "spec_segment_config_params",
       "source": "architecture_config",
       "target": "spec_segment_config_params"
     },
@@ -3294,8 +3294,8 @@
       "source_file": "openspec/specs/vertical-crop/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_vertical_crop_mode_config",
-      "_tgt": "architecture_config",
+      "_src": "architecture_config",
+      "_tgt": "spec_vertical_crop_mode_config",
       "source": "architecture_config",
       "target": "spec_vertical_crop_mode_config"
     },
@@ -3306,8 +3306,8 @@
       "source_file": "openspec/specs/clip-stitching/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_clip_stitching_transition_config",
-      "_tgt": "architecture_config",
+      "_src": "architecture_config",
+      "_tgt": "spec_clip_stitching_transition_config",
       "source": "architecture_config",
       "target": "spec_clip_stitching_transition_config"
     },
@@ -3318,8 +3318,8 @@
       "source_file": "openspec/specs/keyword-video-discovery/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_keyword_discovery_constant",
-      "_tgt": "architecture_config",
+      "_src": "architecture_config",
+      "_tgt": "spec_keyword_discovery_constant",
       "source": "architecture_config",
       "target": "spec_keyword_discovery_constant"
     },
@@ -3330,8 +3330,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/proposal.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_proposal",
-      "_tgt": "architecture_config",
+      "_src": "architecture_config",
+      "_tgt": "archive_highlight_clipper_proposal",
       "source": "architecture_config",
       "target": "archive_highlight_clipper_proposal"
     },
@@ -3342,8 +3342,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/tasks.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_tasks",
-      "_tgt": "architecture_config",
+      "_src": "architecture_config",
+      "_tgt": "archive_highlight_clipper_tasks",
       "source": "architecture_config",
       "target": "archive_highlight_clipper_tasks"
     },
@@ -3486,8 +3486,8 @@
       "source_file": "openspec/specs/video-scoring/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_video_scoring_composite",
-      "_tgt": "video_scorer_scorer_py",
+      "_src": "video_scorer_scorer_py",
+      "_tgt": "spec_video_scoring_composite",
       "source": "video_scorer_scorer_py",
       "target": "spec_video_scoring_composite"
     },
@@ -3498,8 +3498,8 @@
       "source_file": "docs/superpowers/plans/2026-05-16-video-scorer.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "video_scorer_score_videos_fn",
-      "_tgt": "video_scorer_scoring_model",
+      "_src": "video_scorer_scoring_model",
+      "_tgt": "video_scorer_score_videos_fn",
       "source": "video_scorer_scoring_model",
       "target": "video_scorer_score_videos_fn"
     },
@@ -3510,8 +3510,8 @@
       "source_file": "docs/superpowers/plans/2026-05-16-video-scorer.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "video_scorer_weight_tuning_rationale",
-      "_tgt": "video_scorer_scoring_model",
+      "_src": "video_scorer_scoring_model",
+      "_tgt": "video_scorer_weight_tuning_rationale",
       "source": "video_scorer_scoring_model",
       "target": "video_scorer_weight_tuning_rationale"
     },
@@ -3546,8 +3546,8 @@
       "source_file": "openspec/specs/segment-selection/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_segment_short_video_fallback",
-      "_tgt": "spec_segment_greedy_selection",
+      "_src": "spec_segment_greedy_selection",
+      "_tgt": "spec_segment_short_video_fallback",
       "source": "spec_segment_greedy_selection",
       "target": "spec_segment_short_video_fallback"
     },
@@ -3558,8 +3558,8 @@
       "source_file": "openspec/specs/segment-selection/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_segment_chronological_ordering",
-      "_tgt": "spec_segment_greedy_selection",
+      "_src": "spec_segment_greedy_selection",
+      "_tgt": "spec_segment_chronological_ordering",
       "source": "spec_segment_greedy_selection",
       "target": "spec_segment_chronological_ordering"
     },
@@ -3570,8 +3570,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/design.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_design_d2_greedy_selection_rationale",
-      "_tgt": "spec_segment_greedy_selection",
+      "_src": "spec_segment_greedy_selection",
+      "_tgt": "archive_design_d2_greedy_selection_rationale",
       "source": "spec_segment_greedy_selection",
       "target": "archive_design_d2_greedy_selection_rationale"
     },
@@ -3582,8 +3582,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/tasks.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_tasks",
-      "_tgt": "spec_segment_greedy_selection",
+      "_src": "spec_segment_greedy_selection",
+      "_tgt": "archive_highlight_clipper_tasks",
       "source": "spec_segment_greedy_selection",
       "target": "archive_highlight_clipper_tasks"
     },
@@ -3594,8 +3594,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/specs/segment-selection/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_segment_selection_spec",
-      "_tgt": "spec_segment_greedy_selection",
+      "_src": "spec_segment_greedy_selection",
+      "_tgt": "archive_segment_selection_spec",
       "source": "spec_segment_greedy_selection",
       "target": "archive_segment_selection_spec"
     },
@@ -3606,8 +3606,8 @@
       "source_file": "openspec/specs/vertical-crop/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_vertical_crop_single_pass",
-      "_tgt": "spec_vertical_crop_center",
+      "_src": "spec_vertical_crop_center",
+      "_tgt": "spec_vertical_crop_single_pass",
       "source": "spec_vertical_crop_center",
       "target": "spec_vertical_crop_single_pass"
     },
@@ -3618,8 +3618,8 @@
       "source_file": "openspec/specs/vertical-crop/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_vertical_crop_h264",
-      "_tgt": "spec_vertical_crop_center",
+      "_src": "spec_vertical_crop_center",
+      "_tgt": "spec_vertical_crop_h264",
       "source": "spec_vertical_crop_center",
       "target": "spec_vertical_crop_h264"
     },
@@ -3630,8 +3630,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/tasks.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_tasks",
-      "_tgt": "spec_vertical_crop_center",
+      "_src": "spec_vertical_crop_center",
+      "_tgt": "archive_highlight_clipper_tasks",
       "source": "spec_vertical_crop_center",
       "target": "archive_highlight_clipper_tasks"
     },
@@ -3642,8 +3642,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/specs/vertical-crop/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_vertical_crop_spec",
-      "_tgt": "spec_vertical_crop_center",
+      "_src": "spec_vertical_crop_center",
+      "_tgt": "archive_vertical_crop_spec",
       "source": "spec_vertical_crop_center",
       "target": "archive_vertical_crop_spec"
     },
@@ -3654,8 +3654,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/design.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_design_d3_ffmpeg_two_pass_rationale",
-      "_tgt": "spec_vertical_crop_single_pass",
+      "_src": "spec_vertical_crop_single_pass",
+      "_tgt": "archive_design_d3_ffmpeg_two_pass_rationale",
       "source": "spec_vertical_crop_single_pass",
       "target": "archive_design_d3_ffmpeg_two_pass_rationale"
     },
@@ -3666,8 +3666,8 @@
       "source_file": "openspec/specs/clip-stitching/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_clip_stitching_single_passthrough",
-      "_tgt": "spec_clip_stitching_xfade",
+      "_src": "spec_clip_stitching_xfade",
+      "_tgt": "spec_clip_stitching_single_passthrough",
       "source": "spec_clip_stitching_xfade",
       "target": "spec_clip_stitching_single_passthrough"
     },
@@ -3678,8 +3678,8 @@
       "source_file": "openspec/specs/clip-stitching/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_clip_stitching_temp_cleanup",
-      "_tgt": "spec_clip_stitching_xfade",
+      "_src": "spec_clip_stitching_xfade",
+      "_tgt": "spec_clip_stitching_temp_cleanup",
       "source": "spec_clip_stitching_xfade",
       "target": "spec_clip_stitching_temp_cleanup"
     },
@@ -3690,8 +3690,8 @@
       "source_file": "openspec/specs/clip-stitching/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_clip_stitching_output_naming",
-      "_tgt": "spec_clip_stitching_xfade",
+      "_src": "spec_clip_stitching_xfade",
+      "_tgt": "spec_clip_stitching_output_naming",
       "source": "spec_clip_stitching_xfade",
       "target": "spec_clip_stitching_output_naming"
     },
@@ -3702,8 +3702,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/design.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_design_d3_ffmpeg_two_pass_rationale",
-      "_tgt": "spec_clip_stitching_xfade",
+      "_src": "spec_clip_stitching_xfade",
+      "_tgt": "archive_design_d3_ffmpeg_two_pass_rationale",
       "source": "spec_clip_stitching_xfade",
       "target": "archive_design_d3_ffmpeg_two_pass_rationale"
     },
@@ -3714,8 +3714,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/tasks.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_tasks",
-      "_tgt": "spec_clip_stitching_xfade",
+      "_src": "spec_clip_stitching_xfade",
+      "_tgt": "archive_highlight_clipper_tasks",
       "source": "spec_clip_stitching_xfade",
       "target": "archive_highlight_clipper_tasks"
     },
@@ -3726,8 +3726,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/specs/clip-stitching/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_clip_stitching_spec",
-      "_tgt": "spec_clip_stitching_xfade",
+      "_src": "spec_clip_stitching_xfade",
+      "_tgt": "archive_clip_stitching_spec",
       "source": "spec_clip_stitching_xfade",
       "target": "archive_clip_stitching_spec"
     },
@@ -3786,8 +3786,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/design.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_design_d1_composite_scoring_rationale",
-      "_tgt": "spec_highlight_scoring_composite",
+      "_src": "spec_highlight_scoring_composite",
+      "_tgt": "archive_design_d1_composite_scoring_rationale",
       "source": "spec_highlight_scoring_composite",
       "target": "archive_design_d1_composite_scoring_rationale"
     },
@@ -3798,8 +3798,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/tasks.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_tasks",
-      "_tgt": "spec_highlight_scoring_composite",
+      "_src": "spec_highlight_scoring_composite",
+      "_tgt": "archive_highlight_clipper_tasks",
       "source": "spec_highlight_scoring_composite",
       "target": "archive_highlight_clipper_tasks"
     },
@@ -3810,8 +3810,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/design.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_design_d5_scene_change_rationale",
-      "_tgt": "spec_highlight_scoring_scene_change",
+      "_src": "spec_highlight_scoring_scene_change",
+      "_tgt": "archive_design_d5_scene_change_rationale",
       "source": "spec_highlight_scoring_scene_change",
       "target": "archive_design_d5_scene_change_rationale"
     },
@@ -3822,8 +3822,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/design.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_design_d4_face_density_rationale",
-      "_tgt": "spec_highlight_scoring_face_density",
+      "_src": "spec_highlight_scoring_face_density",
+      "_tgt": "archive_design_d4_face_density_rationale",
       "source": "spec_highlight_scoring_face_density",
       "target": "archive_design_d4_face_density_rationale"
     },
@@ -3858,8 +3858,8 @@
       "source_file": "openspec/specs/video-scoring/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "spec_video_scoring_no_mutation",
-      "_tgt": "spec_video_scoring_composite",
+      "_src": "spec_video_scoring_composite",
+      "_tgt": "spec_video_scoring_no_mutation",
       "source": "spec_video_scoring_composite",
       "target": "spec_video_scoring_no_mutation"
     },
@@ -3870,8 +3870,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/proposal.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_proposal",
-      "_tgt": "archive_highlight_clipper_tasks",
+      "_src": "archive_highlight_clipper_tasks",
+      "_tgt": "archive_highlight_clipper_proposal",
       "source": "archive_highlight_clipper_tasks",
       "target": "archive_highlight_clipper_proposal"
     },
@@ -3882,8 +3882,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-highlight-shorts-clipper/proposal.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "archive_highlight_clipper_proposal",
-      "_tgt": "archive_highlight_clipper_design",
+      "_src": "archive_highlight_clipper_design",
+      "_tgt": "archive_highlight_clipper_proposal",
       "source": "archive_highlight_clipper_design",
       "target": "archive_highlight_clipper_proposal"
     },
@@ -3990,8 +3990,8 @@
       "source_file": "openspec/changes/archive/2026-05-16-video-scorer/specs/video-scoring/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "video_scorer_spec_minmax_normalization",
-      "_tgt": "highlight_scoring_spec_composite_window_scoring",
+      "_src": "highlight_scoring_spec_composite_window_scoring",
+      "_tgt": "video_scorer_spec_minmax_normalization",
       "source": "highlight_scoring_spec_composite_window_scoring",
       "target": "video_scorer_spec_minmax_normalization"
     },
@@ -4158,8 +4158,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-security-code-remediation/specs/video-scoring/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "security_scoring_spec_no_mutation",
-      "_tgt": "video_scorer_spec_composite_scoring",
+      "_src": "video_scorer_spec_composite_scoring",
+      "_tgt": "security_scoring_spec_no_mutation",
       "source": "video_scorer_spec_composite_scoring",
       "target": "security_scoring_spec_no_mutation"
     },
@@ -4242,8 +4242,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-security-code-remediation/specs/keyword-video-discovery/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "security_kwd_spec_statistics_enrichment",
-      "_tgt": "video_scorer_kwd_spec_statistics_enrichment",
+      "_src": "video_scorer_kwd_spec_statistics_enrichment",
+      "_tgt": "security_kwd_spec_statistics_enrichment",
       "source": "video_scorer_kwd_spec_statistics_enrichment",
       "target": "security_kwd_spec_statistics_enrichment"
     },
@@ -4254,8 +4254,8 @@
       "source_file": "openspec/changes/archive/2026-05-16-keyword-based-video-discovery/specs/keyword-video-discovery/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "kwd_discovery_spec_statistics_enrichment",
-      "_tgt": "video_scorer_kwd_spec_statistics_enrichment",
+      "_src": "video_scorer_kwd_spec_statistics_enrichment",
+      "_tgt": "kwd_discovery_spec_statistics_enrichment",
       "source": "video_scorer_kwd_spec_statistics_enrichment",
       "target": "kwd_discovery_spec_statistics_enrichment"
     },
@@ -4266,8 +4266,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-security-code-remediation/design.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "security_remediation_design_d1_multiagent",
-      "_tgt": "security_remediation_tasks",
+      "_src": "security_remediation_tasks",
+      "_tgt": "security_remediation_design_d1_multiagent",
       "source": "security_remediation_tasks",
       "target": "security_remediation_design_d1_multiagent"
     },
@@ -4278,8 +4278,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-security-code-remediation/design.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "security_remediation_design_d4_cc_check",
-      "_tgt": "security_remediation_tasks",
+      "_src": "security_remediation_tasks",
+      "_tgt": "security_remediation_design_d4_cc_check",
       "source": "security_remediation_tasks",
       "target": "security_remediation_design_d4_cc_check"
     },
@@ -4458,8 +4458,8 @@
       "source_file": "openspec/changes/archive/2026-05-17-security-code-remediation/specs/pipeline-hardening/spec.md",
       "source_location": null,
       "weight": 1.0,
-      "_src": "security_hardening_spec_safe_int_cast",
-      "_tgt": "security_kwd_spec_statistics_enrichment",
+      "_src": "security_kwd_spec_statistics_enrichment",
+      "_tgt": "security_hardening_spec_safe_int_cast",
       "source": "security_kwd_spec_statistics_enrichment",
       "target": "security_hardening_spec_safe_int_cast"
     },
