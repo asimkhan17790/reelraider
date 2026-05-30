@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-Guidance for Claude Code (claude.ai/code) when working this repo.
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## Commands
 
@@ -25,7 +25,7 @@ Copy `.env.example` to `.env` and fill:
 
 ## Architecture
 
-`main.py:run_pipeline()` calls each stage in sequence.
+Linear pipeline: `main.py:run_pipeline()` calls each stage in sequence.
 
 ```
 discovery → copyright_check → downloader → clipper → caption_gen → uploader
@@ -33,24 +33,24 @@ discovery → copyright_check → downloader → clipper → caption_gen → upl
 
 | Module | Role |
 |--------|------|
-| `pipeline/discovery.py` | YouTube Data API: fetch `mostPopular` videos, `creativeCommon` license filter |
+| `pipeline/discovery.py` | YouTube Data API: fetch `mostPopular` videos filtered to `creativeCommon` license |
 | `pipeline/copyright_check.py` | Second API call: verify `licensedContent` flag + no `regionRestriction` |
 | `pipeline/downloader.py` | `yt-dlp` downloads video to `TEMP_DIR` |
 | `pipeline/clipper.py` | `moviepy` cuts first `CLIP_DURATION_SECONDS` (default 55s) |
-| `pipeline/caption_gen.py` | Claude `claude-sonnet-4-6` generates title/description/tags; prompt caching on system prompt |
+| `pipeline/caption_gen.py` | Claude `claude-sonnet-4-6` generates title/description/tags; uses prompt caching on system prompt |
 | `pipeline/uploader.py` | YouTube Data API OAuth2 upload; privacy default `private` |
 | `scheduler.py` | APScheduler cron at 09:00 daily wrapping `run_pipeline()` |
-| `config.py` | Single source for all env vars; fails fast on missing required keys |
+| `config.py` | Single source of truth for all env vars; fails fast on missing required keys |
 
-All pipeline stage functions take/return `dict` with keys: `video_id`, `title`, `description`, `channel`, `url`.
+All pipeline stage functions take/return plain `dict` with keys: `video_id`,   `title`, `description`, `channel`, `url`.
 
-`MAX_VIDEOS_PER_RUN` caps processing; discovery fetches `3×` that count so copyright filtering can trim it down.
+`MAX_VIDEOS_PER_RUN` caps processing; discovery fetches `3×` that count to allow copyright filtering to trim it down......
 
 ## graphify
 
-Project has graphify knowledge graph at graphify-out/.
+This project has a graphify knowledge graph at graphify-out/.
 
 Rules:
-- Before answering architecture/codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
+- Before answering architecture or codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
 - If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
-- After modifying code files, run `graphify update .` to keep graph current (AST-only, no API cost)
+- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost)
